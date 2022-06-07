@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <h1 class="logo"><img src="./images/logo.png" alt="weniv"></h1>
+        </header>
+        <section class="timer">
+            <h2 class="timer-title">TIMER</h2>
+            <ol class="view-wrap">
+                <li class="hours-wrap time-wrap">
+                    <h3 class="time-title">HRS</h3>
+                    <button type="button" class="time-number hours-number">00</button>
+                </li>
+                <li class="minute-wrap time-wrap">
+                    <h3 class="time-title">MIN</h3>
+                    <button type="button" class="time-number minute-number">00</button>
+                </li>
+                <li class="second-wrap time-wrap">
+                    <h3 class="time-title">SEC</h3>
+                    <button type="button" class="time-number second-number">00</button>
+                </li>
+            </ol>
+            <button type="button" class="btn start-btn" disabled>START</button>
+            <button type="button" class="btn pause-btn close">PAUSE</button>
+            <button type="button" class="btn reset-btn" disabled>RESET</button>
+        </section>
+        <footer class="footer">ⓒ WENIV Corp.</footer>
+        <script src="./timer.js"></script>
+    </div>
+</body>
+</html>

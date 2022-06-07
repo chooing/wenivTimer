@@ -1,0 +1,139 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body { 
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    background: radial-gradient(96.74% 276.79% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%);
+    height: 100vh;
+    font-size: 14px;
+}
+.wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* design */
+
+.header{
+    margin: 72px 0 60px;
+}
+.header .logo{
+    max-width: 244px;
+    margin: 0 auto;
+}
+/* header end */
+.timer{
+    width: 400px;
+    padding: 48px 44px 40px;
+    margin: 0 auto;
+    background: linear-gradient(144.07deg, #5572BB 2.13%, #374B7C 102.97%);
+    box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+    border-radius: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+.timer-title{
+    font-size: 24px;
+    border-bottom: 1px solid #5B75B4;
+}
+.timer-title::after{
+    content: '';
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+    height: 1px;
+    background-color: #3D538A;
+}
+
+.view-wrap{
+    display: flex;
+    gap: 0 22px;
+    justify-content: center;
+    margin: 32px 0 40px;
+} 
+
+.view-wrap .time-wrap{
+    position: relative;
+}
+
+.view-wrap .time-wrap+.time-wrap::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: -22px;
+    width: 22px;
+    height: 80px;
+    background-image: url(../images/dot.png);
+    background-position:center;
+    background-size: 6px 26px;
+    background-repeat: no-repeat;
+}
+
+.view-wrap .time-wrap .time-title{
+    font-size: 12px;
+    color: #A5B6EE;
+    margin-bottom: 4px;
+}
+
+.view-wrap .time-wrap .time-number{
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    background: linear-gradient(314.28deg, #304577 0%, #4C65A0 83%);
+    border: 1px solid #354971;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn{
+    border-radius: 50px;
+    padding: 16px 23px 15px;
+    font-weight: 700;
+    border: none;
+    color: #fff;
+}
+.btn::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    background-size: 16px 16px;
+}
+
+.btn.close{display: none;}
+
+.start-btn{background-color: #5180FF;}
+.start-btn::before{background-image: url(../images/icon-start.png);}
+
+.pause-btn{background-color: #15C2B8;}
+.pause-btn::before{background-image: url(../images/icon-stop.png);}
+
+.reset-btn{background-color: #FB7099; margin-left: 12px;}
+.reset-btn::before{background-image: url(../images/icon-reset.png);}
+
+
+.btn:disabled{
+    color: #617199;    
+    background-color: #324577;
+}
+.start-btn:disabled::before{background-image: url(../images/icon-start-disabled.png);}
+.reset-btn:disabled::before{background-image: url(../images/icon-reset-disabled.png);}
+
+
+.footer{
+    margin: 60px 0 103px ;
+    text-align: center;
+    font-weight: 400;
+    color: #8596BF;
+}
+/* footer */
