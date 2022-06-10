@@ -90,6 +90,16 @@ body {
     box-sizing: border-box;
     color: #fff;
     font-weight: 700;
+    position: relative;
+}
+
+.time-number::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #fff;
 }
 
 .btn{
